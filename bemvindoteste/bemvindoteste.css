@@ -1,0 +1,286 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+
+:root {
+    --primary-color: #8B5FBF;
+    --primary-dark: #6B46C1;
+    --secondary-color: #00D4AA;
+    --background-dark: #0F0F23;
+    --card-dark: #25253C;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0CC;
+    --text-muted: #8B8BA0;
+    --border-color: #343456;
+}
+
+html, body { 
+    height: 100%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+} 
+
+nav { 
+    background-color: #A561E8; 
+    color: white; 
+    padding: 1rem 2rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+} 
+
+.nav-esquerda { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+} 
+
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    color: white; 
+    text-decoration: none; 
+} 
+
+.logo img { 
+    width: 160px; 
+    height: 60px; 
+} 
+
+.menu-botoes { 
+    display: flex; 
+    gap: 20px; 
+} 
+
+.menu-botoes a { 
+    text-decoration: none; 
+    font-weight: bold; 
+    color: white; 
+    padding: 8px 12px; 
+} 
+
+.perfil-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+} 
+
+.icone-pesquisa { 
+    width: 40px; 
+    height: 30px; 
+} 
+
+.perfil img { 
+    width: 45px; 
+    height: 35px; 
+} 
+
+main { 
+    margin-top: 80px; 
+    padding: 30px; 
+    background-color: var(--background-dark);
+    min-height: calc(100vh - 80px);
+}
+
+.welcome-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--text-primary);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    max-width: 600px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 15px;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--secondary-color);
+}
+
+.checkbox-label {
+    flex: 1;
+    text-align: left;
+}
+
+.checkbox-label strong {
+    display: block;
+    font-size: 1.1rem;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 30px 0;
+}
+
+.start-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    color: var(--background-dark);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h3 {
+    font-size: 1.8rem;
+}
+
+.ver-tudo {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.courses-section {
+    margin-bottom: 50px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: var(--card-dark);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-category {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.card-level {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-level.iniciante {
+    background: rgba(0, 212, 170, 0.2);
+    color: var(--secondary-color);
+}
+
+.card-level.intermediario {
+    background: rgba(255, 183, 77, 0.2);
+    color: #FFB74D;
+}
+
+.course-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.card-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.subjects-section {
+    margin-bottom: 50px;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.subject-card {
+    background: var(--card-dark);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.subject-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subject-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
