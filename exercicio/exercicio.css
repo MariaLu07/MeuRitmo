@@ -1,0 +1,193 @@
+
+    :root{
+      --fundo: #1B1B1B;      
+      --roxo:  #4C1184;      
+      --roxo-esc: #3a0c4f;
+      --roxo-claro: #E4C9FF; 
+      --verde:  #00A859;      
+      --vermelho: #D44A44;   
+      --cinza-linha: rgba(255,255,255,0.08);
+      --branco: #ffffff;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--fundo);
+      color:var(--branco);
+      font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+
+
+    .topo{
+      padding: 18px 0 8px;
+      text-align:center;
+    }
+
+    .titulo{
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 28px;
+      color: var(--branco);
+      text-shadow: 0 1px 0 rgba(0,0,0,0.6);
+    }
+
+
+    .topo-botoes-wrap{
+      max-width: 1000px;
+      margin: 12px auto 0;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr; 
+      align-items: center;
+      gap: 12px;
+      width: calc(100% - 40px);
+    }
+
+    .top-left{
+      display:flex;
+      justify-content:flex-start; 
+      gap:12px;
+    }
+
+    .bt-top{
+      background: var(--roxo);
+      color: var(--branco);
+      padding: 8px 14px;
+      border-radius: 8px;
+      min-width: 120px;
+      text-align:center;
+      font-weight:700;
+      font-size:13px;
+      box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    }
+
+
+    .top-right{
+      display:flex;
+      justify-content:flex-end;
+    }
+
+
+    .linha-sep{
+      height: 2px;
+      background: var(--cinza-linha);
+      margin: 18px 0;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .caixa{
+      max-width: 1000px;
+      margin: 12px auto 40px;
+      padding: 22px;
+      text-align:left;
+    }
+
+    .cabeca{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .titulo-ex{
+      font-weight:800;
+      font-size:18px;
+      color: var(--branco);
+      margin:0;
+    }
+
+    .status{
+      background: var(--roxo);
+      color: var(--branco);
+      padding:8px 12px;
+      border-radius:8px;
+      font-weight:700;
+      font-size:13px;
+      box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    }
+
+    .pergunta{
+      color: #dcdcdc;
+      margin-top:14px;
+      margin-bottom:18px;
+      font-size:15px;
+    }
+
+    .respostas{
+      display:flex;
+      gap:14px;
+      flex-wrap:nowrap;
+      justify-content:flex-start;
+      align-items:center;
+      overflow-x:auto; 
+      padding-bottom:6px;
+    }
+
+    .resposta{
+      padding:10px 18px;
+      border-radius: 12px;
+      min-width:110px;
+      text-align:center;
+      color: var(--branco);
+      font-weight:700;
+      cursor: default;
+      flex: 0 0 auto; 
+      box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+      font-size:13px;
+    }
+
+    .r1{ background: var(--vermelho); }
+    .r2{ background: var(--roxo); } 
+    .r3{ background: var(--verde); }
+    .r4{ background: var(--roxo); }
+
+    .r3 { border: 2px solid rgba(255,255,255,0.06); }
+
+    .explic{
+      margin-top:22px;
+      background: var(--roxo-claro);
+      color: #111;
+      border-radius:10px;
+      padding:18px;
+      position:relative;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+      max-width: 100%;
+    }
+
+    .botao-detalhe{
+      position:absolute;
+      right:18px;
+      top:14px;
+      background: var(--roxo);
+      color:var(--branco);
+      border:none;
+      padding:8px 12px;
+      border-radius:8px;
+      font-weight:700;
+      cursor: default;
+      box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    }
+
+    .explic strong { color: var(--roxo); }
+
+    @media (max-width:820px){
+      .topo-botoes-wrap{ grid-template-columns: 1fr 1fr 1fr; }
+      .top-left{ justify-content:center; }
+      .top-right{ justify-content:center; }
+      .respostas{ gap:10px; }
+    }
+
+    @media (max-width:520px){
+      .resposta{ padding:8px 12px; min-width:90px; font-size:12px; border-radius:10px;}
+      .bt-top{ min-width:100px; padding:7px 10px; font-size:12px; }
+      .titulo{ font-size:20px; }
+    }
