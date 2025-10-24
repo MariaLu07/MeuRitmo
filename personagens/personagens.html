@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeuRitmo</title>
+  <link rel="stylesheet" href="personagens.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <span class="icon">⏳</span>
+      <span class="text">Meu<span>Ritmo</span></span>
+    </div>
+    <nav class="menu">
+      <a href="#">TRILHA DE ESTUDO</a>
+      <a href="#">MATÉRIAS</a>
+      <a href="#">RECOMPENSAS</a>
+    </nav>
+    <div class="user-info">
+      <div class="points">
+        <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="coins" />
+        <span>50</span>
+        <p>PONTUAÇÃO</p>
+      </div>
+      <div class="user-icon">👤</div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="level-bar">
+      <button class="level-btn active">Nível 1</button>
+      <button class="mode-btn">Modo explorador</button>
+    </div>
+
+    <div class="cards">
+      <div class="card active">
+        <h2>Nível 1<br><span>Explorador</span></h2>
+        <img src="https://img.freepik.com/fotos-premium/personagem-de-pixel-art-do-arqueologo-explorador-e-pesquisador-para-personagem-de-jogo-de-rpg-para-jogo-de-8-bits_985124-1813.jpg?w=2000" alt="Explorador" />
+        <p>+5% de pontos em atividades<br>de aventura ou ciências</p>
+      </div>
+
+      <div class="card locked">
+        <h2>Nível 2<br><span>Mago</span></h2>
+        <p class="points-needed">500<br>PONTOS</p>
+        <img src="https://png.pngtree.com/png-vector/20240420/ourmid/pngtree-pixel-art-wizard-character-for-rpg-game-in-retro-style-png-image_12302145.png" alt="Mago" />
+        <p>Pode "duplicar" pontos em<br>atividades de leitura ou interpretação</p>
+      </div>
+
+      <div class="card locked">
+        <h2>Nível 3<br><span>Guerreiro</span></h2>
+        <p class="points-needed">1500<br>PONTOS</p>
+        <img src="https://img.freepik.com/fotos-premium/personagem-guerreiro-pixel-art-para-personagem-de-jogo-rpg-em-estilo-retro-para-jogo-de-8-bits_985124-1771.jpg" alt="Guerreiro" />
+        <p>+10% de pontos em atividades<br>de matemática</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
