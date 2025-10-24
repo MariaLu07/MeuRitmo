@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* === TOPBAR === */
+.topbar {
+  background: #a154cf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.logo .accent {
+  color: #3a064f;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.menu a.active {
+  border-bottom: 3px solid #3a064f;
+  padding-bottom: 5px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+/* === MAIN CONTENT === */
+.content {
+  padding: 20px 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+
+.video-area {
+  flex: 1.3;
+}
+
+.video-player {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+}
+
+.video-player img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.video-player img:hover {
+  transform: scale(1.02);
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 20px;
+  pointer-events: none;
+}
+
+
+.professor-box {
+  background: #a154cf;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.professor-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avatar {
+  background: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.resumo {
+  font-size: 0.9rem;
+  color: #f1f1f1;
+  margin-top: 5px;
+}
+
+
+.aulas-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aula-card {
+  background: #1c1c1c;
+  border-radius: 6px;
+  padding: 12px 15px;
+}
+
+.aula-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.tag {
+  background: #a154cf;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tempo {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.barra {
+  flex: 1;
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.progresso {
+  height: 100%;
+  background: #a154cf;
+}
+
+.titulo {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+}
+.aulas-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 600px;  
+  overflow-y: auto;   
+  padding-right: 5px;
+}
+
+.aulas-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.aulas-area::-webkit-scrollbar-thumb {
+  background: #a154cf;
+  border-radius: 10px;
+}
