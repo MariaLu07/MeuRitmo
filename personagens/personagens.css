@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: white;
+}
+
+
+.topbar {
+  background-color: #7a32c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo .icon {
+  margin-right: 8px;
+}
+
+.logo span {
+  color: white;
+}
+
+.logo span span {
+  color: #ff4bff;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.8;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.points img {
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+.points span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.points p {
+  font-size: 10px;
+  color: #d6d6d6;
+}
+
+.user-icon {
+  font-size: 26px;
+}
+
+
+.content {
+  background-color: #1a1a1a;
+  padding: 30px 40px;
+  min-height: 100vh;
+}
+
+.level-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.level-btn, .mode-btn {
+  background-color: #a855f7;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.level-btn.active {
+  background-color: #9333ea;
+}
+
+.level-btn:hover, .mode-btn:hover {
+  background-color: #7e22ce;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #111;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 120px;
+  margin: 15px 0;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.card h2 span {
+  color: #c084fc;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.points-needed {
+  color: #b38efc;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.locked {
+  opacity: 0.5;
+  filter: grayscale(60%);
+}
+
+.active {
+  border: 2px solid #c084fc;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
